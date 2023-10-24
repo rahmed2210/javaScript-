@@ -32,3 +32,38 @@ if (true) {
     console.log(name1)
 }
 
+// This is referred to as leaked global when we assign a value to a variable,
+// but that variable was never explicitly defined
+// in this case, we have a new global name
+
+// so always make sure that you use let to create a variable if you're going to be using it
+//  throughout your program
+
+
+
+console.log('\r\n --->  Example 1  ')
+if (true) {
+    
+    if (true) {
+       let name1 = 'Zayn'
+        console.log(name1)
+    }
+} 
+if (true) {
+    console.log(name1)
+}
+
+
+
+
+/* 
+if (true) {
+    if (true) {
+
+    }
+}
+
+if (true) {
+    
+}
+*/
